@@ -7,7 +7,7 @@ ARG BASE_IMAGE=ubi8/ubi
 ARG BASE_TAG=8.6-754
 
 # importing Maven from public image (version available from UBI base package repos is for JDK8)
-FROM maven:3.8.6-openjdk-18 as base
+FROM maven:3.8.5-openjdk-17 as base
 
 FROM ${BASE_REGISTRY}/${BASE_IMAGE}:${BASE_TAG}
 
